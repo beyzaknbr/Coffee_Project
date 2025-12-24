@@ -1,50 +1,51 @@
 ☕ Kahve Satış Analizi Projesi
-
-Bu proje, bir kahve dükkanına ait satış verilerinin Python ve Pandas kullanılarak analiz edilmesini amaçlamaktadır.
-Ham verilerden anlamlı sonuçlar çıkarılarak satış davranışları incelenmiş, sonuçlar konsol tabanlı bir veri analizi uygulaması aracılığıyla kullanıcıya sunulmuştur.
+Bu proje, bir kahve dükkanına ait satış verilerinin Python ve Pandas kullanılarak analiz edilmesini amaçlamaktadır. Ham verilerden anlamlı sonuçlar çıkarılarak satış davranışları incelenmiş, sonuçlar konsol tabanlı bir veri analizi uygulaması aracılığıyla kullanıcıya sunulmuştur.
 
 Proje, modüler bir yapı ile geliştirilmiş olup; veri yükleme, analiz ve ana uygulama mantığı ayrı dosyalarda ele alınmıştır.
 
+
 📁 Proje Yapısı
+
 ├── data/
-│   └── coffee_sales.csv
-├── analiz.py          # Veri analiz fonksiyonları
-├── veri_yukleyici.py  # Veri okuma ve ön işleme
-├── main.py            # Menü ve uygulama akışı
-└── coffeeSales.ipynb  # Keşifsel Veri Analizi (EDA)
+│   └── coffee_sales.csv    # Ham satış verileri
+├── analiz.py               # Veri analiz fonksiyonları ve hesaplamalar
+├── veri_yukleyici.py       # Veri okuma, temizleme ve ön işleme
+├── main.py                 # Menü yönetimi ve uygulama akışı
+└── coffeeSales.ipynb       # Keşifsel Veri Analizi (EDA) ve Grafik Çalışmaları
+
+
 
 🛠️ Kullanılan Teknolojiler
-
 Python 3
 
-Pandas
+Pandas Library (Veri manipülasyonu)
 
-CSV veri işleme
+CSV Data Processing
 
-Konsol tabanlı kullanıcı menüsü
+Console-Based UI (Kullanıcı etkileşimi)
+
 
 
 🚀 Projede Yapılan Analizler
+📊 Toplam Ciro Hesaplama: İşletmenin genel finansal performansının ölçülmesi.
 
-📊 Toplam ciro hesaplama
+⏰ En Yoğun Satış Saatleri: Müşteri trafiğinin gün içindeki dağılımı.
 
-⏰ En yoğun satış saatlerinin analizi
+☕ En Çok Satılan Ürünler: Adet bazlı popülerlik analizi.
 
-☕ En çok satılan kahve türleri (adet bazlı)
+💰 En Çok Kazandıran Ürünler: Ürün bazlı gelir katkısı analizi.
 
-💰 En çok ciro getiren kahve türleri
+📅 Günlük Satış Yoğunluğu: Haftalık performans takibi.
 
-📅 Günlere göre satış yoğunluğu
-
-🗓️ Hafta içi ve hafta sonu satış karşılaştırması
+🗓️ Hafta İçi / Hafta Sonu Kıyaslaması: Dönemsel trend analizi.
 
 
-📊 Veriden Çıkarılan Temel İçgörüler
 
-Ciro Lideri: Latte, adet bazında en çok satılan ürün olmamasına rağmen, birim fiyat etkisiyle toplam ciroda en yüksek paya sahiptir.
+📊 Veriden Çıkarılan Temel İçgörüler (Business Insights)
+Ciro Lideri: Latte, adet bazında en çok satılan ürün olmamasına rağmen, birim fiyat etkisiyle toplam ciroda yaklaşık 27.866 TL ile en yüksek paya sahiptir.
 
-Operasyonel Verimlilik: Satışların en yoğun gerçekleştiği saat 10:00 olarak tespit edilmiştir. Bu zaman aralığı, personel planlaması ve stok yönetimi için kritik öneme sahiptir.
+Operasyonel Verimlilik: Satışların en yoğun gerçekleştiği saat 10:00 olarak tespit edilmiştir. Bu zaman aralığı, personel planlaması ve stok yönetimi için kritik bir içgörü sunar.
 
-Popüler Ürün: Americano with Milk, adet bazında en çok satılan kahve türüdür ve müşteri tercihlerini anlamada önemli bir göstergedir.
+Popüler Ürün: Americano with Milk, 824 adet ile en çok tercih edilen kahve türüdür; müşteri sadakatini ölçmede önemli bir göstergedir.
 
-Ödeme Alışkanlıkları: Nakit ve kart ile yapılan ödemeler karşılaştırılmış; ödeme yöntemlerine göre harcama eğilimleri analiz edilerek operasyonel süreçlerin optimize edilebileceği görülmüştür.
+Ödeme Alışkanlıkları: Nakit ve kart ödemeleri analiz edilerek, müşteri ödeme tercihlerine göre kasa operasyonlarının hızı ve verimliliği üzerine stratejiler geliştirilmiştir.
